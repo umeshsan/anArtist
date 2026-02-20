@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Artisan trail · Journeys</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="app-screen">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span>9:41</span>
+            <span><i class="fa-solid fa-signal"></i> <i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-battery-full"></i></span>
+        </div>
+
+        <!-- Header -->
+        <div class="app-header">
+            <div class="header-left">
+                <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i></a>
+                <h1>Journeys</h1>
+            </div>
+            <div class="avatar-icon">
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="page-container">
+
+            <div class="section-head">Artist Journeys</div>
+
+            <div class="follower-grid">
+
+                <div class="follower-item">
+                    <div class="follower-avatar">
+                        <i class="fa-regular fa-gem"></i>
+                    </div>
+                    <div class="follower-detail">
+                        <h3>Three Generations of Stone</h3>
+                        <p>
+                            From grandfather to grandson, stone carving traditions continue
+                            in Patan workshops.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="follower-item">
+                    <div class="follower-avatar">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <div class="follower-detail">
+                        <h3>The Silence of Thanka Painting</h3>
+                        <p>
+                            A meditative process using natural pigments and sacred geometry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="follower-item">
+                    <div class="follower-avatar">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <div class="follower-detail">
+                        <h3>Metalwork & Mughal Patterns</h3>
+                        <p>
+                            Ancient naqqashi patterns preserved through hand tools.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fa-regular fa-compass"></i>
+                <span>Discover</span>
+            </a>
+
+            <a href="journeys.html" class="nav-item">
+                <i class="fa-regular fa-map"></i>
+                <span>Journeys</span>
+            </a>
+
+            <a href="works.html" class="nav-item">
+                <i class="fa-regular fa-image"></i>
+                <span>Works</span>
+            </a>
+
+            <a href="profile.html" class="nav-item">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+        <script>
+        document.querySelectorAll('a[href]').forEach(link => {
+            const url = link.getAttribute('href');
+
+            // Ignore external links
+            if (url.startsWith('http') || url.startsWith('#')) return;
+
+            link.addEventListener('click', e => {
+                e.preventDefault();
+
+                const container = document.querySelector('.page-container');
+                if (!container) {
+                    window.location.href = url;
+                    return;
+                }
+
+                container.classList.add('page-exit');
+
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 220);
+            });
+        });
+        </script>
+
+        <script>
+        const isBack = performance.navigation.type === 2;
+
+        const container = document.querySelector('.page-container');
+        if (container) {
+            container.classList.add(isBack ? 'page-back' : 'page-forward');
+        }
+        </script>
+
+
+    </div>
+</body>
+
+</html>
