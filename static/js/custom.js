@@ -1,10 +1,8 @@
 $(document).ready(function() {
-    /* INIT */
-    initScrollToTop();
+    /* ===================== INIT ===================== */
     initFilters();
     initPageTransitions();
     initPageDirection();
-
 
     /* FILTER TABS (REUSABLE) */
     function initFilters() {
@@ -61,7 +59,8 @@ $(document).ready(function() {
     }
 
 
-    /* PAGE TRANSITIONS */
+
+    /* ===================== PAGE TRANSITIONS ===================== */
     function initPageTransitions() {
         document.querySelectorAll('a[href]').forEach(link => {
             const url = link.getAttribute('href');
@@ -69,13 +68,11 @@ $(document).ready(function() {
 
             link.addEventListener('click', e => {
                 e.preventDefault();
-
                 const container = document.querySelector('.page-container');
                 if (!container) {
                     window.location.href = url;
                     return;
                 }
-
                 container.classList.add('page-exit');
                 setTimeout(() => window.location.href = url, 220);
             });
@@ -83,46 +80,13 @@ $(document).ready(function() {
     }
 
 
-    /* PAGE DIRECTION (BACK/FORWARD) */
+
+    /* ===================== PAGE DIRECTION ===================== */
     function initPageDirection() {
         const container = document.querySelector('.page-container');
         if (!container) return;
-
         const isBack = performance.navigation.type === 2;
         container.classList.add(isBack ? 'page-back' : 'page-forward');
     }
 
 });
-
-
-/* SCROLL TO TOP */
-function debounce(func, wait) {
-    let timeout;
-    return function() {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, arguments), wait);
-    };
-}
-
-function initScrollToTop() {
-    const $topButton = $('.topTop');
-    if (!$topButton.length) return;
-
-    $(window).on('scroll', debounce(function() {
-        const scrollTop = $(window).scrollTop();
-        const docHeight = $(document).height();
-        const winHeight = $(window).height();
-        const percent = Math.round((scrollTop / (docHeight - winHeight)) * 100);
-
-        $topButton.css({
-            opacity: percent > 15 ? 1 : 0,
-            transform: percent > 15 ?
-                'translateY(0)' : 'translateY(calc(100% + 5px))'
-        });
-    }, 100));
-
-    $topButton.on('click', function() {
-        $('html, body').stop().animate({ scrollTop: 0 }, 1000);
-        return false;
-    });
-}

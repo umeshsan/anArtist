@@ -1,28 +1,27 @@
 <footer class="text-center">
-    <!-- Bottom Navigation -->
     <div class="bottom-nav">
-        <a href="{{ "/" | relLangURL }}" class="nav-item active">
+        <!-- Discover (Home) -->
+        <a href="{{ "/" | relLangURL }}" class="nav-item {{ if .IsHome }}active{{ end }}">
             <i class="fa-regular fa-compass"></i>
             <span>Discover</span>
         </a>
 
-        <a href="{{ "/journeys/" | relLangURL }}" class="nav-item">
+        <!-- Journeys -->
+        <a href="{{ "/journeys/" | relLangURL }}" class="nav-item {{ if in .RelPermalink "/journeys/" }}active{{ end }}">
             <i class="fa-regular fa-map"></i>
             <span>Journeys</span>
         </a>
 
-        <a href="{{ "/works/" | relLangURL }}" class="nav-item">
+        <!-- Works -->
+        <a href="{{ "/works/" | relLangURL }}" class="nav-item {{ if in .RelPermalink "/works/" }}active{{ end }}">
             <i class="fa-regular fa-image"></i>
             <span>Works</span>
         </a>
 
-        <a href="{{ "/profile/" | relLangURL }}" class="nav-item">
+        <!-- Profile -->
+        <a href="{{ "/profile/" | relLangURL }}" class="nav-item {{ if in .RelPermalink "/profile/" }}active{{ end }}">
             <i class="fa-regular fa-user"></i>
             <span>Profile</span>
         </a>
     </div>
 </footer>
-
-<div class="topTop">
-    <img src="{{ "/img/icon-up.svg" | relURL }}" alt="Scroll to Top">
-</div>

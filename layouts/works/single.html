@@ -1,147 +1,92 @@
 {{ define "main" }}
-
-<!-- Scrollable Content -->
-<div class="page-container">
+<div class="page-container works-page">
 
     <div class="section-head">Artists & Their Artworks</div>
 
     <!-- Artist Tabs -->
     <div class="journey-tabs">
-        <span class="pill active" data-artist="artist-amar">Amar</span>
-        <span class="pill" data-artist="artist-ujay">Ujay</span>
-        <span class="pill" data-artist="artist-santa">Santa</span>
-        <span class="pill" data-artist="artist-rajbhai">Rajbhai</span>
-        <span class="pill" data-artist="artist-suman">Suman</span>
-        <span class="pill" data-artist="artist-baburaja">Babu Raja</span>
-        <span class="pill" data-artist="artist-siddhiraj">Siddhi Raj</span>
-        <span class="pill" data-artist="artist-sumankalu">SumanKalu</span>
-        <span class="pill" data-artist="artist-gautam">Gautam</span>
+        <span class="pill active" data-filter="all" data-target="artist-card">All Artists</span>
+        <span class="pill" data-filter="amar" data-target="artist-card">Amar</span>
+        <span class="pill" data-filter="ujay" data-target="artist-card">Ujay</span>
+        <span class="pill" data-filter="santa" data-target="artist-card">Santa</span>
+        <span class="pill" data-filter="rajbhai" data-target="artist-card">Rajbhai</span>
+        <span class="pill" data-filter="baburaja" data-target="artist-card">Babu Raja</span>
+        <span class="pill" data-filter="siddhiraj" data-target="artist-card">Siddhi Raj</span>
+        <span class="pill" data-filter="sumanKalu" data-target="artist-card">SumanKalu</span>
+        <span class="pill" data-filter="gautam" data-target="artist-card">Gautam</span>
     </div>
 
     <!-- Gallery Grid -->
-    <div class="studio-gallery">
-        <div class="studio-card" data-artist="artist-amar">
-            <div class="studio-grid">
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/stone-1.jpg" | relURL }}" alt=""></figure>
+    <div class="artist-feed" data-container="artist-card">
+        <div class="artist-card" data-category="amar">
+            <div class="artist-grid">
+                <div class="artist-box" data-material="stone">
+                    <figure>
+                        <a href="{{ "/img/stone-1.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Black Stone · 2024">
+                            <img src="{{ "/img/stone-1.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
                     <strong>Buddha Head</strong>
                     <span>Black Stone · 2024</span>
                 </div>
-
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/stone-2.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Black Stone · 2024</span>
-                </div>
-
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/stone-3.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Black Stone · 2024</span>
-                </div>
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/stone-1.jpg" | relURL }}" alt=""></figure>
+                <div class="artist-box" data-material="stone">
+                    <figure>
+                        <a href="{{ "/img/stone-2.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Black Stone · 2024">
+                            <img src="{{ "/img/stone-2.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
                     <strong>Buddha Head</strong>
                     <span>Black Stone · 2024</span>
                 </div>
             </div>
         </div>
 
-        <div class="studio-card" data-artist="artist-ujay">
-            <div class="studio-grid">
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/thanka-1.jpg" | relURL }}" alt=""></figure>
+        <div class="artist-card" data-category="ujay">
+            <div class="artist-grid">
+                <div class="artist-box" data-material="thanka">
+                    <figure>
+                        <a href="{{ "/img/thanka-1.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Thanka · 2024">
+                            <img src="{{ "/img/thanka-1.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
                     <strong>Buddha Head</strong>
                     <span>Thanka · 2024</span>
                 </div>
-
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/thanka-2.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Thanka · 2024</span>
-                </div>
-
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/thanka-3.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Thanka · 2024</span>
-                </div>
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/thanka-1.jpg" | relURL }}" alt=""></figure>
+                <div class="artist-box" data-material="thanka">
+                    <figure>
+                        <a href="{{ "/img/thanka-2.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Thanka · 2024">
+                            <img src="{{ "/img/thanka-2.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
                     <strong>Buddha Head</strong>
                     <span>Thanka · 2024</span>
                 </div>
             </div>
         </div>
 
-        <div class="studio-card" data-artist="artist-santa">
-            <div class="studio-grid">
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Copper · 2024</span>
-                </div>
-
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/metal-2.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Copper · 2024</span>
-                </div>
-
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/metal-3.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Copper · 2024</span>
-                </div>
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
+        <div class="artist-card" data-category="santa">
+            <div class="artist-grid">
+                <div class="artist-box" data-material="metal">
+                    <figure>
+                        <a href="{{ "/img/metal-1.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/metal-1.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
                     <strong>Buddha Head</strong>
                     <span>Copper · 2024</span>
                 </div>
             </div>
         </div>
 
-        <div class="studio-card" data-artist="artist-rajbhai">
-            <div class="studio-grid">
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/stone-2.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Stone · 2024</span>
-                </div>
-
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/stone-3.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Stone · 2024</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="studio-card" data-artist="artist-suman">
-            <div class="studio-grid">
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/stone-1.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Stone · 2024</span>
-                </div>
-
-                <div class="studio-box">
-                    <figure><img src="{{ "/img/stone-3.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Stone · 2024</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="studio-card" data-artist="artist-baburaja">
-            <div class="studio-grid">
-                <div class="studio-box">
+        <div class="artist-card" data-category="rajbhai">
+            <div class="artist-grid">
+                <div class="artist-box">
                     <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
                     <span>Metal · 2024</span>
                 </div>
 
-                <div class="studio-box">
+                <div class="artist-box">
                     <figure><img src="{{ "/img/metal-2.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
                     <span>Metal · 2024</span>
@@ -149,15 +94,47 @@
             </div>
         </div>
 
-        <div class="studio-card" data-artist="artist-siddhiraj">
-            <div class="studio-grid">
-                <div class="studio-box">
+        <div class="artist-card" data-category="suman">
+            <div class="artist-grid">
+                <div class="artist-box">
                     <figure><img src="{{ "/img/stone-1.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
                     <span>Stone · 2024</span>
                 </div>
 
-                <div class="studio-box">
+                <div class="artist-box">
+                    <figure><img src="{{ "/img/stone-3.jpg" | relURL }}" alt=""></figure>
+                    <strong>Buddha Head</strong>
+                    <span>Stone · 2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="artist-card" data-category="baburaja">
+            <div class="artist-grid">
+                <div class="artist-box">
+                    <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
+                    <strong>Buddha Head</strong>
+                    <span>Metal · 2024</span>
+                </div>
+
+                <div class="artist-box">
+                    <figure><img src="{{ "/img/metal-2.jpg" | relURL }}" alt=""></figure>
+                    <strong>Buddha Head</strong>
+                    <span>Metal · 2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="artist-card" data-category="siddhiraj">
+            <div class="artist-grid">
+                <div class="artist-box">
+                    <figure><img src="{{ "/img/stone-1.jpg" | relURL }}" alt=""></figure>
+                    <strong>Buddha Head</strong>
+                    <span>Stone · 2024</span>
+                </div>
+
+                <div class="artist-box">
                     <figure><img src="{{ "/img/stone-2.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
                     <span>Stone · 2024</span>
@@ -165,15 +142,15 @@
             </div>
         </div>
 
-        <div class="studio-card" data-artist="artist-sumankalu">
-            <div class="studio-grid">
-                <div class="studio-box">
+        <div class="artist-card" data-category="sumanKalu">
+            <div class="artist-grid">
+                <div class="artist-box">
                     <figure><img src="{{ "/img/metal-3.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
                     <span>Metal · 2024</span>
                 </div>
 
-                <div class="studio-box">
+                <div class="artist-box">
                     <figure><img src="{{ "/img/metal-2.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
                     <span>Metal · 2024</span>
@@ -181,53 +158,22 @@
             </div>
         </div>
 
-        <div class="studio-card" data-artist="artist-gautam">
-            <div class="studio-grid">
-                <div class="studio-box">
+        <div class="artist-card" data-category="gautam">
+            <div class="artist-grid">
+                <div class="artist-box">
                     <figure><img src="{{ "/img/metal-2.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
                     <span>Metal · 2024</span>
                 </div>
 
-                <div class="studio-box">
+                <div class="artist-box">
                     <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
                     <span>Metal · 2024</span>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
-
-<!-- JS for Tab Switching -->
-<script>
-const tabs = document.querySelectorAll('.journey-tabs .pill');
-const cards = document.querySelectorAll('.studio-card');
-
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        // Remove active class from all tabs
-        tabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-
-        const artist = tab.getAttribute('data-artist');
-
-        // Show/Hide cards based on artist
-        cards.forEach(card => {
-            if (card.getAttribute('data-artist') === artist) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    });
-});
-
-// Initialize first tab view
-cards.forEach(card => {
-    if (!card.classList.contains('studio-card')) return;
-    card.style.display = card.getAttribute('data-artist') === 'artist-amar' ? 'block' : 'none';
-});
-</script>
-
 {{ end }}
