@@ -1,0 +1,54 @@
+{{ define "main" }}
+<!-- Scrollable Content -->
+<div class="page-container">
+    <div class="artist-profile-page">
+        <div class="profile-cover cover-metal">
+            <div>
+                <div class="profile-name-big">{{ .Params.headerTitle | default .Title }}</div>
+                <div class="profile-sub"><i class="fa-solid fa-hammer"></i> {{ .Params.postTitle | default .Title }} · {{ .Params.yearTitle | default .Title }}</div>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-title"><i class="fa-solid fa-circle-info"></i> Background & journey</div>
+            <p class="bio-text">Santa Raj Bajracharya carries forward the legacy of Mughal-era naqqashi (metal engraving) in Lucknow. His family has worked with copper, brass and silver for over two centuries. He combines traditional floral patterns with contemporary design.</p>
+            <div class="detail-block"><i class="fa-regular fa-gem"></i> "Every curve tells a story of the past."</div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-title"><i class="fa-regular fa-image"></i> Notable works</div>
+            <div class="works-gallery">
+                <div class="gallery-item">
+                    <div class="gallery-icon"><i class="fa-regular fa-circle"></i></div>
+                    <div class="gallery-text">
+                        <p>Paisley engraved tray</p>
+                        <span>brass, hand-carved, 18" diameter</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-icon"><i class="fa-solid fa-hammer"></i></div>
+                    <div class="gallery-text">
+                        <p>Copper lota (water pot)</p>
+                        <span>with fine floral pattern · 2023</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-icon"><i class="fa-regular fa-moon"></i></div>
+                    <div class="gallery-text">
+                        <p>Silver jewellery box</p>
+                        <span>engraved with Mughal motifs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-title"><i class="fa-regular fa-clock"></i> Heritage & recognition</div>
+            <p>• 7th generation metalworker<br>• Awarded by Lucknow Mahotsav 2023<br>• Works in Crafts Museum, Delhi<br>• Conducts workshops on traditional naqqashi</p>
+        </div>
+
+        <a href="{{ "/" | relLangURL }}" class="view-more-btn" style="margin: 0 22px 20px;"><i class="fa-solid fa-arrow-left"></i> Back to discover</a>
+    </div>
+</div>
+
+{{ end }}

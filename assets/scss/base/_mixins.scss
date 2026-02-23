@@ -1,0 +1,25 @@
+// assets/scss/_mixins.scss
+
+// Breakpoints map
+$breakpoints: (xs: 320px,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+2xl: 1440px,
+3xl: 1600px);
+
+// Mixin for breakpoint
+@mixin respond-to($breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+
+    @if $size {
+        @media (max-width: $size) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Breakpoint #{$breakpoint} not found in the $breakpoints map.";
+    }
+}

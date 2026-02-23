@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+<!-- Scrollable Content -->
+<div class="page-container">
+    <div class="artist-profile-page">
+        <div class="profile-cover cover-stone">
+            <div>
+                <div class="profile-name-big">{{ .Params.headerTitle | default .Title }}</div>
+                <div class="profile-sub"><i class="fa-regular fa-gem"></i> {{ .Params.postTitle | default .Title }} · {{ .Params.yearTitle | default .Title }}</div>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-title"><i class="fa-solid fa-circle-info"></i> Background & journey</div>
+            <p class="bio-text">Suman Bajracharya, a stone artist living in Nepal, belongs to a land where stone carving is not just an art form but a living tradition. Nepal’s temples, stupas, and heritage sites are filled with stone sculptures that date back centuries, and artists like Amar grow up surrounded by this visual language.</p>
+            <p class="bio-text">From an early age, exposure to traditional architecture, religious icons, and handcrafted stone works plays a major role in shaping a stone artist’s sensitivity to form, proportion, and symbolism.</p>
+            <div class="detail-block"><i class="fa-solid fa-quote-left"></i> "Suman Bajracharya’s journey as a stone artist reflects patience, discipline, and respect for material."</div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-title"><i class="fa-regular fa-image"></i> Notable works</div>
+            <div class="works-gallery">
+                <div class="gallery-item">
+                    <div class="gallery-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <div class="gallery-text">
+                        <p>Chaityas</p>
+                        <span>Black Stone, Hotel Hyatt, Bauddha · 2003</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <div class="gallery-text">
+                        <p>Ratnasambhava Buddha</p>
+                        <span>Black Stone · Nagbahal Near Golden Temple, 2015</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <div class="gallery-text">
+                        <p>Tibetan Chaitya</p>
+                        <span>Black Stone · Lumbini Bihar, 2016</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-title"><i class="fa-regular fa-compass"></i> Studio & exhibitions</div>
+            <p><i class="fa-regular fa-location-dot"></i> Workshop in Malaysia</p>
+            <p style="margin-top: 10px;">Exhibitions: Malaysia Expo, Malaysia. His works are part of the 'Stone Heritage' project.</p>
+            <p style="margin-top: 10px;"><i class="fa-solid fa-hammer"></i> Available for commissions</p>
+        </div>
+
+        <a href="{{ "/" | relLangURL }}" class="view-more-btn" style="margin: 0 22px 20px;"><i class="fa-solid fa-arrow-left"></i> Back to discover</a>
+    </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,31 @@
+baseURL = '/'
+title = 'Artisan trail'
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableInlineShortcodes = true
+disableFastRender = false
+relativeURLs = true
+canonifyURLs = true
+
+[languages]
+  [languages.en]
+    languageName = "EN"
+    languageCode = "en"
+    weight = 1
+    contentDir = "content/en"
+
+  [languages.ne]
+    languageName = "NE"
+    weight = 2
+    contentDir = "content/ne"
+
+  [languages.jp]
+    languageName = "JP"
+    languageCode = "ja"
+    weight = 3
+    contentDir = "content/jp"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+
+<body>
+    <div class="app-screen">
+        {{ partial "header.html" . }}
+
+
+        {{ block "main" . }}{{ end }}
+
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- jQuery v4.0.0-->
+    <script src=" {{ "js/jquery-4.0.0.min.js" | relURL }}"></script>
+
+    <!-- Custom JS -->
+    <script src=" {{ "js/custom.js" | relURL }}"></script>
+</body>
+
+</html>

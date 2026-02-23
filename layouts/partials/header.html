@@ -1,0 +1,25 @@
+<header>
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <span>9:41</span>
+        <span><i class="fa-solid fa-signal"></i> <i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-battery-full"></i></span>
+    </div>
+
+    <!-- Header -->
+    <div class="app-header">
+        <div class="header-left">
+            {{ if .Params.back }}
+            <a href="{{ .Params.back | relLangURL }}" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            {{ end }}
+
+            <!-- Show headerTitle if exists, otherwise page Title -->
+            <h1>{{ .Params.headerTitle | default .Title }}</h1>
+        </div>
+
+        <a href="{{ "/profile/" | relLangURL }}" class="avatar-icon">
+            <i class="fa-regular fa-user"></i>
+        </a>
+    </div>
+</header>

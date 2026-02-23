@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<!-- Scrollable Content -->
+<div class="page-container">
+    <div class="artist-profile-page">
+        <div class="profile-cover cover-thanka">
+            <div>
+                <div class="profile-name-big">{{ .Params.headerTitle | default .Title }}</div>
+                <div class="profile-sub"><i class="fa-solid fa-pagoda"></i> {{ .Params.postTitle | default .Title }} · {{ .Params.yearTitle | default .Title }}</div>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-title"><i class="fa-solid fa-circle-info"></i> Background & journey</div>
+            <p class="bio-text">Born into a family of Buddhist painters in the Kathmandu valley, Ujay Bajracharya learned the intricate art of Thangka from her grandmother. She uses natural mineral pigments and 24k gold. Her thangkas are known for spiritual precision and vibrant healing iconography.</p>
+            <div class="detail-block"><i class="fa-solid fa-feather"></i> "Painting is meditation, each deity arises from silence."</div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-title"><i class="fa-regular fa-image"></i> Notable works</div>
+            <div class="works-gallery">
+                <div class="gallery-item">
+                    <div class="gallery-icon"><i class="fa-solid fa-dharmachakra"></i></div>
+                    <div class="gallery-text">
+                        <p>Green Tara</p>
+                        <span>mineral pigment, gold · 50x70cm, 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-icon"><i class="fa-solid fa-palette"></i></div>
+                    <div class="gallery-text">
+                        <p>Medicine Buddha</p>
+                        <span>natural dyes on cotton · 2022</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-icon"><i class="fa-solid fa-om"></i></div>
+                    <div class="gallery-text">
+                        <p>White Tara</p>
+                        <span>gold leaf & mineral · 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <div class="section-title"><i class="fa-regular fa-compass"></i> Exhibitions</div>
+            <p>• Kathmandu Triennale 2023<br>• Tibet House, Delhi 2024<br>• Private collections in Japan and Europe</p>
+        </div>
+
+        <a href="{{ "/" | relLangURL }}" class="view-more-btn" style="margin: 0 22px 20px;"><i class="fa-solid fa-arrow-left"></i> Back to discover</a>
+    </div>
+</div>
+
+{{ end }}

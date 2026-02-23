@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ "/img/site-icon/favicon-96x96.png" | relURL }}" sizes="96x96" />
+<link rel="icon" type="image/png" href="{{ "/img/site-icon/web-app-manifest-192x192.png" | relURL }}" sizes="192x192" />
+<link rel="icon" type="image/png" href="{{ "/img/site-icon/web-app-manifest-512x512.png" | relURL }}" sizes="512x512" />
+
+<link rel="icon" type="image/svg+xml" href="{{ "/img/site-icon/favicon.svg" | relURL }}" />
+<link rel="shortcut icon" href="{{ "/img/site-icon/favicon.ico" | relURL }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/img/site-icon/apple-touch-icon.png" | relURL }}" />
+<link rel="manifest" href="{{ "/img/site-icon/site.webmanifest" | relURL }}" />
+
+<!-- Googlefonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+{{ $scss := resources.Get "scss/main.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $scss.RelPermalink }}" integrity="{{ $scss.Data.Integrity }}">
