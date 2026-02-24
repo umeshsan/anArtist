@@ -2,79 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artisan trail</title>
-    <link>http://localhost:1313/anArtist/en/</link>
+    <link>//localhost:1313/en/</link>
     <description>Recent content on Artisan trail</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/anArtist/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Amar Shakya</title>
-      <link>http://localhost:1313/anArtist/en/artist/artist-amar/</link>
+      <link>//localhost:1313/en/artist/artist-amar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/artist/artist-amar/</guid>
+      <guid>//localhost:1313/en/artist/artist-amar/</guid>
       <description></description>
     </item>
     <item>
       <title>Babu Raja Bajracharya</title>
-      <link>http://localhost:1313/anArtist/en/artist/artist-baburaja/</link>
+      <link>//localhost:1313/en/artist/artist-baburaja/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/artist/artist-baburaja/</guid>
+      <guid>//localhost:1313/en/artist/artist-baburaja/</guid>
       <description></description>
     </item>
     <item>
       <title>Journeys</title>
-      <link>http://localhost:1313/anArtist/en/journeys/</link>
+      <link>//localhost:1313/en/journeys/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/journeys/</guid>
+      <guid>//localhost:1313/en/journeys/</guid>
       <description></description>
     </item>
     <item>
       <title>Profile</title>
-      <link>http://localhost:1313/anArtist/en/profile/</link>
+      <link>//localhost:1313/en/profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/profile/</guid>
+      <guid>//localhost:1313/en/profile/</guid>
       <description></description>
     </item>
     <item>
       <title>Rajbhai Bajracharya</title>
-      <link>http://localhost:1313/anArtist/en/artist/artist-rajbhai/</link>
+      <link>//localhost:1313/en/artist/artist-rajbhai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/artist/artist-rajbhai/</guid>
+      <guid>//localhost:1313/en/artist/artist-rajbhai/</guid>
       <description></description>
     </item>
     <item>
       <title>Santa Bajracharya</title>
-      <link>http://localhost:1313/anArtist/en/artist/artist-santa/</link>
+      <link>//localhost:1313/en/artist/artist-santa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/artist/artist-santa/</guid>
+      <guid>//localhost:1313/en/artist/artist-santa/</guid>
       <description></description>
     </item>
     <item>
       <title>Siddhi Raj Shakya</title>
-      <link>http://localhost:1313/anArtist/en/artist/artist-siddhiraj/</link>
+      <link>//localhost:1313/en/artist/artist-siddhiraj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/artist/artist-siddhiraj/</guid>
+      <guid>//localhost:1313/en/artist/artist-siddhiraj/</guid>
       <description></description>
     </item>
     <item>
       <title>Surendra Bajracharya</title>
-      <link>http://localhost:1313/anArtist/en/artist/artist-surendra/</link>
+      <link>//localhost:1313/en/artist/artist-surendra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/artist/artist-surendra/</guid>
+      <guid>//localhost:1313/en/artist/artist-surendra/</guid>
       <description></description>
     </item>
     <item>
       <title>Ujay Bajracharya</title>
-      <link>http://localhost:1313/anArtist/en/artist/artist-ujay/</link>
+      <link>//localhost:1313/en/artist/artist-ujay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/artist/artist-ujay/</guid>
+      <guid>//localhost:1313/en/artist/artist-ujay/</guid>
       <description></description>
     </item>
     <item>
       <title>Works</title>
-      <link>http://localhost:1313/anArtist/en/works/</link>
+      <link>//localhost:1313/en/works/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/anArtist/en/works/</guid>
+      <guid>//localhost:1313/en/works/</guid>
       <description></description>
     </item>
   </channel>

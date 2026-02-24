@@ -1,4 +1,4 @@
-baseURL = 'https://umeshsan.github.io/anArtist/'
+baseURL = '/'
 title = 'Artisan trail'
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
