@@ -6,19 +6,33 @@
     <!-- Artist Tabs -->
     <div class="journey-tabs">
         <span class="pill active" data-filter="all" data-target="artist-card">All Artists</span>
-        <span class="pill" data-filter="amar" data-target="artist-card">Amar</span>
-        <span class="pill" data-filter="ujay" data-target="artist-card">Ujay</span>
-        <span class="pill" data-filter="santa" data-target="artist-card">Santa</span>
-        <span class="pill" data-filter="rajbhai" data-target="artist-card">Rajbhai</span>
-        <span class="pill" data-filter="baburaja" data-target="artist-card">Babu Raja</span>
-        <span class="pill" data-filter="siddhiraj" data-target="artist-card">Siddhi Raj</span>
-        <span class="pill" data-filter="sumanKalu" data-target="artist-card">SumanKalu</span>
-        <span class="pill" data-filter="gautam" data-target="artist-card">Gautam</span>
+        <span class="pill" data-filter="amar" data-target="artist-card">
+            <img src="{{ "/img/amar.jpg" |relURL }}">
+        </span>
+        <span class="pill" data-filter="ujay" data-target="artist-card">
+            <img src="{{ "/img/ujay.png" |relURL }}">
+        </span>
+        <span class="pill" data-filter="santa" data-target="artist-card">
+            <img src="{{ "/img/santa.png" |relURL }}">
+        </span>
+        <span class="pill" data-filter="rajbhai" data-target="artist-card">
+            <img src="{{ "/img/rajbhai.png" |relURL }}">
+        </span>
+        <span class="pill" data-filter="baburaja" data-target="artist-card">
+            <img src="{{ "/img/baburaja.png" |relURL }}">
+        </span>
+        <span class="pill" data-filter="siddhiraj" data-target="artist-card">
+            <img src="{{ "/img/siddhiraj.png" |relURL }}">
+        </span>
+        <span class="pill" data-filter="surendra" data-target="artist-card">
+            <img src="{{ "/img/surendra.png" |relURL }}">
+        </span>
     </div>
 
     <!-- Gallery Grid -->
     <div class="artist-feed" data-container="artist-card">
         <div class="artist-card" data-category="amar">
+            <h3>{{ .Params.artistAmar }}</h3>
             <div class="artist-grid">
                 <div class="artist-box" data-material="stone">
                     <figure>
@@ -42,6 +56,7 @@
         </div>
 
         <div class="artist-card" data-category="ujay">
+            <h3>{{ .Params.artistUjay }}</h3>
             <div class="artist-grid">
                 <div class="artist-box" data-material="thanka">
                     <figure>
@@ -61,10 +76,29 @@
                     <strong>Buddha Head</strong>
                     <span>Thanka · 2024</span>
                 </div>
+                <div class="artist-box" data-material="thanka">
+                    <figure>
+                        <a href="{{ "/img/thanka-3.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Thanka · 2024">
+                            <img src="{{ "/img/thanka-3.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>Buddha Head</strong>
+                    <span>Thanka · 2024</span>
+                </div>
+                <div class="artist-box" data-material="thanka">
+                    <figure>
+                        <a href="{{ "/img/thanka-4.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Thanka · 2024">
+                            <img src="{{ "/img/thanka-4.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>Buddha Head</strong>
+                    <span>Thanka · 2024</span>
+                </div>
             </div>
         </div>
 
         <div class="artist-card" data-category="santa">
+            <h3>{{ .Params.artistSanta }}</h3>
             <div class="artist-grid">
                 <div class="artist-box" data-material="metal">
                     <figure>
@@ -79,6 +113,7 @@
         </div>
 
         <div class="artist-card" data-category="rajbhai">
+            <h3>{{ .Params.artistRajbhai }}</h3>
             <div class="artist-grid">
                 <div class="artist-box">
                     <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
@@ -94,23 +129,8 @@
             </div>
         </div>
 
-        <div class="artist-card" data-category="suman">
-            <div class="artist-grid">
-                <div class="artist-box">
-                    <figure><img src="{{ "/img/stone-1.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Stone · 2024</span>
-                </div>
-
-                <div class="artist-box">
-                    <figure><img src="{{ "/img/stone-3.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Stone · 2024</span>
-                </div>
-            </div>
-        </div>
-
         <div class="artist-card" data-category="baburaja">
+            <h3>{{ .Params.artistBaburaja }}</h3>
             <div class="artist-grid">
                 <div class="artist-box">
                     <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
@@ -127,6 +147,7 @@
         </div>
 
         <div class="artist-card" data-category="siddhiraj">
+            <h3>{{ .Params.artistSiddhiraj }}</h3>
             <div class="artist-grid">
                 <div class="artist-box">
                     <figure><img src="{{ "/img/stone-1.jpg" | relURL }}" alt=""></figure>
@@ -142,34 +163,31 @@
             </div>
         </div>
 
-        <div class="artist-card" data-category="sumanKalu">
+        <div class="artist-card" data-category="surendra">
+            <h3>{{ .Params.artistSurendra }}</h3>
             <div class="artist-grid">
                 <div class="artist-box">
-                    <figure><img src="{{ "/img/metal-3.jpg" | relURL }}" alt=""></figure>
+                    <figure><img src="{{ "/img/engrave-1.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
-                    <span>Metal · 2024</span>
+                    <span>engrave · 2024</span>
                 </div>
 
                 <div class="artist-box">
-                    <figure><img src="{{ "/img/metal-2.jpg" | relURL }}" alt=""></figure>
+                    <figure><img src="{{ "/img/engrave-2.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
-                    <span>Metal · 2024</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="artist-card" data-category="gautam">
-            <div class="artist-grid">
-                <div class="artist-box">
-                    <figure><img src="{{ "/img/metal-2.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Metal · 2024</span>
+                    <span>engrave · 2024</span>
                 </div>
 
                 <div class="artist-box">
-                    <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
+                    <figure><img src="{{ "/img/engrave-3.jpg" | relURL }}" alt=""></figure>
                     <strong>Buddha Head</strong>
-                    <span>Metal · 2024</span>
+                    <span>engrave · 2024</span>
+                </div>
+
+                <div class="artist-box">
+                    <figure><img src="{{ "/img/engrave-4.jpg" | relURL }}" alt=""></figure>
+                    <strong>Buddha Head</strong>
+                    <span>engrave · 2024</span>
                 </div>
             </div>
         </div>

@@ -22,13 +22,6 @@
       <description></description>
     </item>
     <item>
-      <title>Gautam Bajracharya</title>
-      <link>//localhost:1313/jp/artist/artist-gautam/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/jp/artist/artist-gautam/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Journeys</title>
       <link>//localhost:1313/jp/journeys/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -64,17 +57,10 @@
       <description></description>
     </item>
     <item>
-      <title>Suman Bajracharya</title>
-      <link>//localhost:1313/jp/artist/artist-sumankalu/</link>
+      <title>Surendra Bajracharya</title>
+      <link>//localhost:1313/jp/artist/artist-surendra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/jp/artist/artist-sumankalu/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Suman Shakya</title>
-      <link>//localhost:1313/jp/artist/artist-suman/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/jp/artist/artist-suman/</guid>
+      <guid>//localhost:1313/jp/artist/artist-surendra/</guid>
       <description></description>
     </item>
     <item>

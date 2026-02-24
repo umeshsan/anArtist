@@ -72,18 +72,6 @@
                 href="//localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/artist/artist-gautam/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-gautam/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/artist/artist-gautam/"
-                />
-  </url><url>
     <loc>//localhost:1313/en/journeys/</loc>
     <xhtml:link
                 rel="alternate"
@@ -144,28 +132,16 @@
                 href="//localhost:1313/en/artist/artist-siddhiraj/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/artist/artist-sumankalu/</loc>
+    <loc>//localhost:1313/en/artist/artist-surendra/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-sumankalu/"
+                href="//localhost:1313/jp/artist/artist-surendra/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/artist/artist-sumankalu/"
-                />
-  </url><url>
-    <loc>//localhost:1313/en/artist/artist-suman/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-suman/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/artist/artist-suman/"
+                href="//localhost:1313/en/artist/artist-surendra/"
                 />
   </url><url>
     <loc>//localhost:1313/en/tags/</loc>

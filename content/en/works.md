@@ -2,4 +2,11 @@
 title: "Works"
 headerTitle: "Works"
 back: "/"
+artistAmar: "Amar Shakya"
+artistUjay: "Ujay Bajracharya"
+artistSanta: "Santa Bajracharya"
+artistRajbhai: "Rajbhai Bajracharya"
+artistBaburaja: "Baburaja Bajracharya"
+artistSiddhiraj: "Siddhiraj Bajracharya"
+artistSurendra: "Surendra Bajracharya"
 ---

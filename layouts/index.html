@@ -26,6 +26,10 @@
         <span class="pill" data-filter="metal" data-target="artist-card">
             <i class="fa-solid fa-hammer"></i> Metal Craft
         </span>
+        {{ else if eq . "engrave" }}
+        <span class="pill" data-filter="engrave" data-target="artist-card">
+            <i class="fa-solid fa-hammer"></i> Engrave Craft
+        </span>
         {{ end }}
         {{ end }}
     </div>

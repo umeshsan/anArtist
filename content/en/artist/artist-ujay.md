@@ -4,15 +4,15 @@ headerTitle: "Ujay Bajracharya"
 postTitle: "Thanka & Painting"
 yearTitle: "35+ years"
 type: "artist"
-category: "thanka"              # stone / thanka / metal
+category: "thanka"   # stone / thanka / metal / engrave
 image: "/img/ujay.png"
-background: "Specializing in Thangka and traditional paintings, this artist combines careful detail with deep cultural knowledge. Each work embodies spiritual symbolism, timeless beauty, and a harmony of color and form."
+background: "Born in 1981, Bajracharya succeeded 3rd Level Skill Test as Paubha Artist, conducted by Council for Technical Education and Vocational Training (CTEVT) organized by Handecen. He received various training such as Paubha painting training from Akheshwor Mahabihar; Pulchowk, iconography training organized by Right Livelihood Research Centre and Saddharma Kashya training organized by Youngsters Club; Nagbahal. He is the recipient of various national as well as international awards and had participated in many national as well as international exhibitions."
 location: "Imadole, lalitpur, Nepal"
 workSample:
-  title: "Shikarkut Chaitya"
-  details: "Black Stone, 2015"
+  title: "Paubha painting"
+  details: "Best Artist of the Year 2016-17"
 phone: "+977-xxxxxxxxxx"
-email: "ujay@hotmail.com"
+email: "ujaybajracharya@hotmail.com"
 website: "https://www.ujay.com.np"
 back: "/"
 ---

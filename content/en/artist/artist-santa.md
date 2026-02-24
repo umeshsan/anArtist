@@ -4,7 +4,7 @@ headerTitle: "Santa Bajracharya"
 postTitle: "METAL CRAFT"
 yearTitle: "35+ years"
 type: "artist"
-category: "metal"              # stone / thanka / metal
+category: "metal"  # stone / thanka / metal / engrave
 image: "/img/santa.png"
 background: "This metal craft artist shapes raw metal into striking sculptures and functional art. Each creation reflects precision, skill, and a blend of tradition and modern design, showcasing the enduring beauty of metal craftsmanship."
 location: "Bhinchhe Bahal -7, Patan, Nepal"
