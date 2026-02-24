@@ -2,187 +2,187 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/en/artist/artist-amar/</loc>
+    <loc>http://localhost:1313/anArtist/en/artist/artist-amar/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-amar/"
+                href="http://localhost:1313/anArtist/jp/artist/artist-amar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/artist/artist-amar/"
+                href="http://localhost:1313/anArtist/en/artist/artist-amar/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/</loc>
+    <loc>http://localhost:1313/anArtist/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ne"
-                href="//localhost:1313/ne/"
+                href="http://localhost:1313/anArtist/ne/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/"
+                href="http://localhost:1313/anArtist/jp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/"
+                href="http://localhost:1313/anArtist/en/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/artist/</loc>
+    <loc>http://localhost:1313/anArtist/en/artist/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/artist/"
+                href="http://localhost:1313/anArtist/jp/artist/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/artist/"
+                href="http://localhost:1313/anArtist/en/artist/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/artist/artist-baburaja/</loc>
+    <loc>http://localhost:1313/anArtist/en/artist/artist-baburaja/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-baburaja/"
+                href="http://localhost:1313/anArtist/jp/artist/artist-baburaja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/artist/artist-baburaja/"
+                href="http://localhost:1313/anArtist/en/artist/artist-baburaja/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/categories/</loc>
+    <loc>http://localhost:1313/anArtist/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ne"
-                href="//localhost:1313/ne/categories/"
+                href="http://localhost:1313/anArtist/ne/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/categories/"
+                href="http://localhost:1313/anArtist/jp/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/categories/"
+                href="http://localhost:1313/anArtist/en/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/journeys/</loc>
+    <loc>http://localhost:1313/anArtist/en/journeys/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/journeys/"
+                href="http://localhost:1313/anArtist/jp/journeys/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/journeys/"
+                href="http://localhost:1313/anArtist/en/journeys/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/profile/</loc>
+    <loc>http://localhost:1313/anArtist/en/profile/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/profile/"
+                href="http://localhost:1313/anArtist/jp/profile/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/profile/"
+                href="http://localhost:1313/anArtist/en/profile/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/artist/artist-rajbhai/</loc>
+    <loc>http://localhost:1313/anArtist/en/artist/artist-rajbhai/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-rajbhai/"
+                href="http://localhost:1313/anArtist/jp/artist/artist-rajbhai/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/artist/artist-rajbhai/"
+                href="http://localhost:1313/anArtist/en/artist/artist-rajbhai/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/artist/artist-santa/</loc>
+    <loc>http://localhost:1313/anArtist/en/artist/artist-santa/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-santa/"
+                href="http://localhost:1313/anArtist/jp/artist/artist-santa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/artist/artist-santa/"
+                href="http://localhost:1313/anArtist/en/artist/artist-santa/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/artist/artist-siddhiraj/</loc>
+    <loc>http://localhost:1313/anArtist/en/artist/artist-siddhiraj/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-siddhiraj/"
+                href="http://localhost:1313/anArtist/jp/artist/artist-siddhiraj/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/artist/artist-siddhiraj/"
+                href="http://localhost:1313/anArtist/en/artist/artist-siddhiraj/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/artist/artist-surendra/</loc>
+    <loc>http://localhost:1313/anArtist/en/artist/artist-surendra/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-surendra/"
+                href="http://localhost:1313/anArtist/jp/artist/artist-surendra/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/artist/artist-surendra/"
+                href="http://localhost:1313/anArtist/en/artist/artist-surendra/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/tags/</loc>
+    <loc>http://localhost:1313/anArtist/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ne"
-                href="//localhost:1313/ne/tags/"
+                href="http://localhost:1313/anArtist/ne/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/tags/"
+                href="http://localhost:1313/anArtist/jp/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/tags/"
+                href="http://localhost:1313/anArtist/en/tags/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/artist/artist-ujay/</loc>
+    <loc>http://localhost:1313/anArtist/en/artist/artist-ujay/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/artist/artist-ujay/"
+                href="http://localhost:1313/anArtist/jp/artist/artist-ujay/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/artist/artist-ujay/"
+                href="http://localhost:1313/anArtist/en/artist/artist-ujay/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/works/</loc>
+    <loc>http://localhost:1313/anArtist/en/works/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/works/"
+                href="http://localhost:1313/anArtist/jp/works/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/works/"
+                href="http://localhost:1313/anArtist/en/works/"
                 />
   </url>
 </urlset>

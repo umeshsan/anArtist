@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/ne/</loc>
+    <loc>http://localhost:1313/anArtist/ne/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/"
+                href="http://localhost:1313/anArtist/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/"
+                href="http://localhost:1313/anArtist/jp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ne"
-                href="//localhost:1313/ne/"
+                href="http://localhost:1313/anArtist/ne/"
                 />
   </url><url>
-    <loc>//localhost:1313/ne/categories/</loc>
+    <loc>http://localhost:1313/anArtist/ne/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/categories/"
+                href="http://localhost:1313/anArtist/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/categories/"
+                href="http://localhost:1313/anArtist/jp/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ne"
-                href="//localhost:1313/ne/categories/"
+                href="http://localhost:1313/anArtist/ne/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/ne/tags/</loc>
+    <loc>http://localhost:1313/anArtist/ne/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/tags/"
+                href="http://localhost:1313/anArtist/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="//localhost:1313/jp/tags/"
+                href="http://localhost:1313/anArtist/jp/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ne"
-                href="//localhost:1313/ne/tags/"
+                href="http://localhost:1313/anArtist/ne/tags/"
                 />
   </url>
 </urlset>
