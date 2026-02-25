@@ -2,7 +2,7 @@
 
 /* Floating Bottom Navigation inside app-screen */
 .app-screen .bottom-nav {
-    position: absolute;
+    position: fixed;
     bottom: 12px;
     left: 12px;
     right: 12px;
@@ -15,14 +15,8 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     z-index: 10;
     padding: 0 10px;
-
-
-    position: fixed;
-    left: 0;
-    width: calc(100% - 24px);
     padding-bottom: env(safe-area-inset-bottom);
     /* iPhone/Android notch */
-    margin-inline: auto;
 }
 
 /* Nav items */
