@@ -1,10 +1,26 @@
 $(document).ready(function() {
+
     /* ===================== INIT ===================== */
+    initFancybox();
     initFilters();
     initPageTransitions();
     initPageDirection();
 
-    /* FILTER TABS (REUSABLE) */
+
+    /* ===================== FANCYBOX ===================== */
+    function initFancybox() {
+        if (typeof Fancybox === "undefined") return;
+
+        Fancybox.bind('[data-fancybox]', {
+            Thumbs: false,
+            Toolbar: {
+                display: ["close"]
+            }
+        });
+    }
+
+
+    /* ===================== FILTER TABS (REUSABLE) ===================== */
     function initFilters() {
         const filterPills = document.querySelectorAll('.pill');
         if (!filterPills.length) return;
@@ -15,14 +31,14 @@ $(document).ready(function() {
                 const targetClass = this.dataset.target;
                 const filterValue = this.dataset.filter;
 
-                // Active pill
+                /* Active pill */
                 document
                     .querySelectorAll(`.pill[data-target="${targetClass}"]`)
                     .forEach(p => p.classList.remove('active'));
 
                 this.classList.add('active');
 
-                // Target container
+                /* Target container */
                 const container = document.querySelector(`[data-container="${targetClass}"]`);
                 if (!container) return;
 
@@ -35,7 +51,7 @@ $(document).ready(function() {
                     );
                 });
 
-                // No results message
+                /* No results message */
                 const visibleCards = container.querySelectorAll(`.${targetClass}:not(.hidden)`);
                 const existingMsg = container.querySelector('#noResultsMsg');
                 if (existingMsg) existingMsg.remove();
@@ -49,43 +65,62 @@ $(document).ready(function() {
                          </div>`
                     );
                 }
+
+                /* Rebind Fancybox after filtering */
+                initFancybox();
             });
         });
 
-        // Auto-init active pills
+        /* Auto-init active pills */
         filterPills.forEach(pill => {
-            if (pill.classList.contains('active')) pill.click();
+            if (pill.classList.contains('active')) {
+                pill.click();
+            }
         });
     }
-
 
 
     /* ===================== PAGE TRANSITIONS ===================== */
     function initPageTransitions() {
         document.querySelectorAll('a[href]').forEach(link => {
             const url = link.getAttribute('href');
-            if (!url || url.startsWith('http') || url.startsWith('#')) return;
+
+            // Ignore external, hash, and fancybox links
+            if (
+                !url ||
+                url.startsWith('http') ||
+                url.startsWith('#') ||
+                link.hasAttribute('data-fancybox')
+            ) {
+                return;
+            }
 
             link.addEventListener('click', e => {
                 e.preventDefault();
+
                 const container = document.querySelector('.page-container');
                 if (!container) {
                     window.location.href = url;
                     return;
                 }
+
                 container.classList.add('page-exit');
-                setTimeout(() => window.location.href = url, 220);
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 220);
             });
         });
     }
-
 
 
     /* ===================== PAGE DIRECTION ===================== */
     function initPageDirection() {
         const container = document.querySelector('.page-container');
         if (!container) return;
-        const isBack = performance.navigation.type === 2;
+
+        const isBack =
+            performance.getEntriesByType("navigation")[0] ? .type === "back_forward";
+
         container.classList.add(isBack ? 'page-back' : 'page-forward');
     }
 

@@ -15,13 +15,6 @@
       <description></description>
     </item>
     <item>
-      <title>Artist</title>
-      <link>//localhost:1313/en/artist/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/en/artist/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Babu Raja Bajracharya</title>
       <link>//localhost:1313/en/artist/artist-baburaja/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
