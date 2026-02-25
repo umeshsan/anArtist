@@ -25,6 +25,9 @@ body {
     flex-direction: column;
     height: 100vh;
     position: relative;
+
+    min-height: calc(100vh - 132px);
+    /* subtract footer height */
 }
 
 .app-header {
