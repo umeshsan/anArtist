@@ -4,7 +4,6 @@
 .app-screen .bottom-nav {
     position: absolute;
     bottom: 12px;
-    /* lift slightly above the bottom */
     left: 12px;
     right: 12px;
     height: 70px;
@@ -13,7 +12,6 @@
     justify-content: space-around;
     align-items: center;
     border-radius: 36px;
-    /* fully rounded pill shape */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     z-index: 10;
     padding: 0 10px;
@@ -23,7 +21,7 @@
 .app-screen .bottom-nav .nav-item {
     flex: 1;
     text-align: center;
-    color: #555;
+    color: $black;
     text-decoration: none;
     font-size: 12px;
     display: flex;
@@ -40,7 +38,7 @@
 
 /* Active menu item */
 .app-screen .bottom-nav .nav-item.active {
-    color: #007bff;
+    color: $blue;
 }
 
 .app-screen .bottom-nav .nav-item:active {

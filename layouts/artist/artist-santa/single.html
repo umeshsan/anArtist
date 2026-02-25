@@ -16,66 +16,51 @@
 
         <div class="detail-section">
             <div class="section-title"><i class="fa-regular fa-image"></i> Notable works</div>
-            <div class="works-gallery">
-                <div class="gallery-item">
-
-                    <div class="gallery-text">
-                        <p>Copper Buddha Statue</p>
-                        <span>A life-like sculpture in polished copper, reflecting exquisite detail and smooth, flowing lines.</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-
-                    <div class="gallery-text">
-                        <p>Bronze Ritual Bell</p>
-                        <span>Handcrafted ceremonial bell with intricate carvings and symbolic motifs, perfect for temple use.</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-
-                    <div class="gallery-text">
-                        <p>Decorative Metal Vase</p>
-                        <span>A functional yet artistic piece, combining traditional patterns with modern aesthetics in hammered bronze.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="detail-section">
-            <div class="section-title"><i class="fa-regular fa-clock"></i> Heritage & recognition</div>
-            <p>• 7th generation metalworker<br>• Awarded by Lucknow Mahotsav 2023<br>• Works in Crafts Museum, Delhi<br>• Conducts workshops on traditional naqqashi</p>
-        </div>
-
-        <div class="detail-section">
-            <div class="section-title"><i class="fa-regular fa-map"></i>Contact Artist</div>
-            <div class="contact-info">
-
-                {{ with .Params.phone }}
-                <p class="">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:{{ . }}">{{ . }}</a>
-                </p>
-                {{ end }}
-
-                {{ with .Params.email }}
-                <p class="">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:{{ . }}">{{ . }}</a>
-                </p>
-                {{ end }}
-
-                {{ with .Params.website }}
-                <p class="">
-                    <i class="fa-solid fa-globe"></i>
-                    <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
-                </p>
-                {{ end }}
-
-            </div>
-
-            <a href="{{ "/" | relLangURL }}" class="view-more-btn"><i class="fa-solid fa-arrow-left"></i> Back to discover</a>
+            <ul class="exhibition-list">
+                <li>
+                    <strong>2001</strong>
+                    <p><i class="fa-solid fa-square"></i>Bauddha Bihar Sangha Aksheshwor Mahabihar.</p>
+                    <p><i class="fa-solid fa-square"></i>National Exhibition NAFA.</p>
+                </li>
+            </ul>
         </div>
     </div>
+
+    <div class="detail-section">
+        <div class="section-title"><i class="fa-regular fa-clock"></i> Heritage & recognition</div>
+        <p>• 7th generation metalworker<br>• Awarded by Lucknow Mahotsav 2023<br>• Works in Crafts Museum, Delhi<br>• Conducts workshops on traditional naqqashi</p>
+    </div>
+
+    <div class="detail-section">
+        <div class="section-title"><i class="fa-regular fa-map"></i>Contact Artist</div>
+        <div class="contact-info">
+
+            {{ with .Params.phone }}
+            <p class="">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:{{ . }}">{{ . }}</a>
+            </p>
+            {{ end }}
+
+            {{ with .Params.email }}
+            <p class="">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:{{ . }}">{{ . }}</a>
+            </p>
+            {{ end }}
+
+            {{ with .Params.website }}
+            <p class="">
+                <i class="fa-solid fa-globe"></i>
+                <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
+            </p>
+            {{ end }}
+
+        </div>
+
+        <a href="{{ "/" | relLangURL }}" class="view-more-btn"><i class="fa-solid fa-arrow-left"></i> Back to discover</a>
+    </div>
+</div>
 </div>
 
 {{ end }}

@@ -118,8 +118,8 @@ $(document).ready(function() {
         const container = document.querySelector('.page-container');
         if (!container) return;
 
-        const isBack =
-            performance.getEntriesByType("navigation")[0] ? .type === "back_forward";
+        const nav = performance.getEntriesByType("navigation");
+        const isBack = nav.length && nav[0].type === "back_forward";
 
         container.classList.add(isBack ? 'page-back' : 'page-forward');
     }

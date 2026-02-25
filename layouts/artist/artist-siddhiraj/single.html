@@ -17,68 +17,53 @@
 
         <div class="detail-section">
             <div class="section-title"><i class="fa-regular fa-image"></i> Notable works</div>
-            <div class="works-gallery">
-                <div class="gallery-item">
-
-                    <div class="gallery-text">
-                        <p>Buddha Head Sculpture</p>
-                        <span>A finely carved black stone Buddha head, showcasing delicate facial expressions and smooth, polished details.</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-
-                    <div class="gallery-text">
-                        <p>Stone Lotus Pedestal</p>
-                        <span>A traditional lotus-shaped pedestal, meticulously sculpted to highlight symmetry and natural stone texture.</span>
-                    </div>
-                </div>
-                <div class="gallery-item">
-
-                    <div class="gallery-text">
-                        <p>Carved Guardian Figure</p>
-                        <span>A striking stone guardian statue featuring intricate detailing, reflecting cultural heritage and masterful craftsmanship.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="detail-section">
-            <div class="section-title"><i class="fa-regular fa-compass"></i> Studio & exhibitions</div>
-            <p><i class="fa-solid fa-location-dot"></i> Workshop in Malaysia</p>
-            <p style="margin-top: 10px;">Exhibitions: Malaysia Expo, Malaysia. His works are part of the 'Stone Heritage' project.</p>
-            <p style="margin-top: 10px;"><i class="fa-solid fa-hammer"></i> Available for commissions</p>
-        </div>
-
-        <div class="detail-section">
-            <div class="section-title"><i class="fa-regular fa-map"></i>Contact Artist</div>
-            <div class="contact-info">
-
-                {{ with .Params.phone }}
-                <p class="">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:{{ . }}">{{ . }}</a>
-                </p>
-                {{ end }}
-
-                {{ with .Params.email }}
-                <p class="">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:{{ . }}">{{ . }}</a>
-                </p>
-                {{ end }}
-
-                {{ with .Params.website }}
-                <p class="">
-                    <i class="fa-solid fa-globe"></i>
-                    <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
-                </p>
-                {{ end }}
-
-            </div>
-
-            <a href="{{ "/" | relLangURL }}" class="view-more-btn"><i class="fa-solid fa-arrow-left"></i> Back to discover</a>
+            <ul class="exhibition-list">
+                <li>
+                    <strong>2001</strong>
+                    <p><i class="fa-solid fa-square"></i>Bauddha Bihar Sangha Aksheshwor Mahabihar.</p>
+                    <p><i class="fa-solid fa-square"></i>National Exhibition NAFA.</p>
+                </li>
+            </ul>
         </div>
     </div>
+
+    <div class="detail-section">
+        <div class="section-title"><i class="fa-regular fa-compass"></i> Studio & exhibitions</div>
+        <p><i class="fa-solid fa-location-dot"></i> Workshop in Malaysia</p>
+        <p style="margin-top: 10px;">Exhibitions: Malaysia Expo, Malaysia. His works are part of the 'Stone Heritage' project.</p>
+        <p style="margin-top: 10px;"><i class="fa-solid fa-hammer"></i> Available for commissions</p>
+    </div>
+
+    <div class="detail-section">
+        <div class="section-title"><i class="fa-regular fa-map"></i>Contact Artist</div>
+        <div class="contact-info">
+
+            {{ with .Params.phone }}
+            <p class="">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:{{ . }}">{{ . }}</a>
+            </p>
+            {{ end }}
+
+            {{ with .Params.email }}
+            <p class="">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:{{ . }}">{{ . }}</a>
+            </p>
+            {{ end }}
+
+            {{ with .Params.website }}
+            <p class="">
+                <i class="fa-solid fa-globe"></i>
+                <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
+            </p>
+            {{ end }}
+
+        </div>
+
+        <a href="{{ "/" | relLangURL }}" class="view-more-btn"><i class="fa-solid fa-arrow-left"></i> Back to discover</a>
+    </div>
+</div>
 </div>
 
 {{ end }}
