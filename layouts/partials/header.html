@@ -13,7 +13,7 @@
         </div>
 
         <a href="{{ "/profile/" | relLangURL }}" class="avatar-icon">
-            <img src="{{ "/img/avatar.png" | relURL }}">
+            <img src="{{ (.Params.image | default "/img/logo.png") | relURL }}" alt="{{ .Title }}">
         </a>
     </div>
 </header>
