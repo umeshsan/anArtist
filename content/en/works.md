@@ -9,4 +9,7 @@ artistRajbhai: "Rajbhai Bajracharya"
 artistBaburaja: "Baburaja Bajracharya"
 artistSiddhiraj: "Siddhiraj Bajracharya"
 artistSurendra: "Surendra Bajracharya"
+cateStone: "stone"
+cateMetal: "metal"
+cateThanka: "thanka"
 ---

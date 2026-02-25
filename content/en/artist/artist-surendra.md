@@ -5,7 +5,7 @@ postTitle: "Engraving CRAFT"
 yearTitle: "5+ years"
 type: "artist"
 category: "engrave"  # stone / thanka / metal / engrave
-image: "/img/surendra.png"
+image: "/img/surendra.jpg"
 background: "An engraving artist skillfully carves or etches designs onto metal, wood, or stone, creating detailed artworks, personalized items, or decorative patterns, blending precision, creativity, and traditional craftsmanship into each piece."
 location: "Imadole, Lalitpur, Nepal"
 workSample:

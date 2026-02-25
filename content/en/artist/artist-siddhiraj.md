@@ -5,7 +5,7 @@ postTitle: "STONE CRAFT"
 yearTitle: "40+ years (3th generation)"
 type: "artist"
 category: "stone"  # stone / thanka / metal / engrave
-image: "/img/siddhiraj.png"
+image: "/img/siddhiraj.jpg"
 background: "Specializing in stone, this artist shapes each piece with precision and care. Their work balances intricate detail with bold expression, turning raw stone into sculptures that honor both tradition and artistic innovation."
 location: "Sinchahiti, Patan, Nepal"
 workSample:

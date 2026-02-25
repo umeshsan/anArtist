@@ -226,10 +226,22 @@ body {
     flex-direction: column;
     border-radius: 24px;
     background: #fcfaf7;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
     border: 1px solid #f1ebe5;
     padding: 1rem;
     transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.artist-card[data-category="stone"] {
+    background: #eeeeee;
+}
+
+.artist-card[data-category="thanka"] {
+    background: #DCEDC8;
+}
+
+.artist-card[data-category="metal"] {
+    background: #fff3d1;
 }
 
 .artist-card.hidden {
@@ -311,11 +323,11 @@ body {
 
             img {
                 border-radius: 12px;
-                aspect-ratio: 1;
+                aspect-ratio: 0.66;
                 height: 100%;
                 object-fit: cover;
                 width: 100%;
-                max-height: 200px;
+                max-height: 280px;
             }
         }
     }
@@ -351,22 +363,10 @@ body {
 }
 
 .media-symbol img {
-    object-fit: contain;
-    aspect-ratio: 1;
+    object-fit: cover;
+    aspect-ratio: 1.5;
     width: 100%;
     height: 100%;
-}
-
-.stone-bg {
-    background: linear-gradient(125deg, #c9bcae, #b1a18f);
-}
-
-.thanka-bg {
-    background: linear-gradient(160deg, #d6bda8, #b28667);
-}
-
-.metal-bg {
-    background: linear-gradient(115deg, #a09b94, #6e6a64);
 }
 
 .artist-info {
@@ -427,7 +427,7 @@ body {
 }
 
 .background-story {
-    background: #ffffffd5;
+    background: #ffffff3d;
     padding: 16px;
     border-radius: 20px;
     margin: 10px 0 4px;
@@ -767,10 +767,22 @@ body {
         list-style-type: circle;
     }
 
-    .main-img img {
-        width: 100%;
-        aspect-ratio: 1;
-        object-fit: cover;
+    .main-img {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        margin-bottom: 2rem;
+        border-radius: 24px;
+        background: #fcfaf7;
+        border: 1px solid #f1ebe5;
+        padding: 1rem;
+        transition: opacity .3s ease,
+            transform .2s ease;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 16px;
+        }
     }
 
     iframe.map-embed {

@@ -34,22 +34,40 @@
         <div class="artist-card" data-category="amar">
             <h3>{{ .Params.artistAmar }}</h3>
             <div class="artist-grid">
-                <div class="artist-box" data-material="stone">
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
                     <figure>
-                        <a href="{{ "/img/stone-1.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Black Stone · 2024">
-                            <img src="{{ "/img/stone-1.jpg" | relURL }}" alt="Buddha Head" />
+                        <a href="{{ "/img/stone-1.jpg" | relURL }}" data-fancybox="gallery" data-caption="Sikharkut Chaitya">
+                            <img src="{{ "/img/stone-1.jpg" | relURL }}" alt="Sikharkut Chaitya" />
                         </a>
                     </figure>
-                    <strong>Buddha Head</strong>
+                    <strong>Sikharkut Chaitya</strong>
+                    <span>Black Stone · 2018</span>
+                </div>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/stone-2.jpg" | relURL }}" data-fancybox="gallery" data-caption="Ratnasambhava Buddha">
+                            <img src="{{ "/img/stone-2.jpg" | relURL }}" alt="Ratnasambhava Buddha" />
+                        </a>
+                    </figure>
+                    <strong>Ratnasambhava Buddha</strong>
+                    <span>Black Stone · 2016</span>
+                </div>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/stone-3.jpg" | relURL }}" data-fancybox="gallery" data-caption="Chaityas">
+                            <img src="{{ "/img/stone-3.jpg" | relURL }}" alt="Chaityas" />
+                        </a>
+                    </figure>
+                    <strong>Chaityas @ Hotel Hyatt</strong>
                     <span>Black Stone · 2024</span>
                 </div>
-                <div class="artist-box" data-material="stone">
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
                     <figure>
-                        <a href="{{ "/img/stone-2.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Black Stone · 2024">
-                            <img src="{{ "/img/stone-2.jpg" | relURL }}" alt="Buddha Head" />
+                        <a href="{{ "/img/stone-4.jpg" | relURL }}" data-fancybox="gallery" data-caption="Sakyamuni Buddha">
+                            <img src="{{ "/img/stone-4.jpg" | relURL }}" alt="Sakyamuni Buddha" />
                         </a>
                     </figure>
-                    <strong>Buddha Head</strong>
+                    <strong>Sakyamuni Buddha</strong>
                     <span>Black Stone · 2024</span>
                 </div>
             </div>
@@ -58,7 +76,7 @@
         <div class="artist-card" data-category="ujay">
             <h3>{{ .Params.artistUjay }}</h3>
             <div class="artist-grid">
-                <div class="artist-box" data-material="thanka">
+                <div class="artist-box" data-material="{{ .Params.cateThanka }}">
                     <figure>
                         <a href="{{ "/img/thanka-1.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Thanka · 2024">
                             <img src="{{ "/img/thanka-1.jpg" | relURL }}" alt="Buddha Head" />
@@ -67,7 +85,7 @@
                     <strong>Buddha Head</strong>
                     <span>Thanka · 2024</span>
                 </div>
-                <div class="artist-box" data-material="thanka">
+                <div class="artist-box" data-material="{{ .Params.cateThanka }}">
                     <figure>
                         <a href="{{ "/img/thanka-2.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Thanka · 2024">
                             <img src="{{ "/img/thanka-2.jpg" | relURL }}" alt="Buddha Head" />
@@ -76,7 +94,7 @@
                     <strong>Buddha Head</strong>
                     <span>Thanka · 2024</span>
                 </div>
-                <div class="artist-box" data-material="thanka">
+                <div class="artist-box" data-material="{{ .Params.cateThanka }}">
                     <figure>
                         <a href="{{ "/img/thanka-3.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Thanka · 2024">
                             <img src="{{ "/img/thanka-3.jpg" | relURL }}" alt="Buddha Head" />
@@ -85,7 +103,7 @@
                     <strong>Buddha Head</strong>
                     <span>Thanka · 2024</span>
                 </div>
-                <div class="artist-box" data-material="thanka">
+                <div class="artist-box" data-material="{{ .Params.cateThanka }}">
                     <figure>
                         <a href="{{ "/img/thanka-4.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Thanka · 2024">
                             <img src="{{ "/img/thanka-4.jpg" | relURL }}" alt="Buddha Head" />
@@ -100,7 +118,7 @@
         <div class="artist-card" data-category="santa">
             <h3>{{ .Params.artistSanta }}</h3>
             <div class="artist-grid">
-                <div class="artist-box" data-material="metal">
+                <div class="artist-box" data-material="{{ .Params.cateMetal }}">
                     <figure>
                         <a href="{{ "/img/metal-1.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
                             <img src="{{ "/img/metal-1.jpg" | relURL }}" alt="Buddha Head" />
@@ -115,16 +133,41 @@
         <div class="artist-card" data-category="rajbhai">
             <h3>{{ .Params.artistRajbhai }}</h3>
             <div class="artist-grid">
-                <div class="artist-box">
-                    <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Metal · 2024</span>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
                 </div>
-
-                <div class="artist-box">
-                    <figure><img src="{{ "/img/metal-2.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Metal · 2024</span>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
+                </div>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
+                </div>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
                 </div>
             </div>
         </div>
@@ -132,16 +175,41 @@
         <div class="artist-card" data-category="baburaja">
             <h3>{{ .Params.artistBaburaja }}</h3>
             <div class="artist-grid">
-                <div class="artist-box">
-                    <figure><img src="{{ "/img/metal-1.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Metal · 2024</span>
+                <div class="artist-box" data-material="{{ .Params.cateMetal }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
                 </div>
-
-                <div class="artist-box">
-                    <figure><img src="{{ "/img/metal-2.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Metal · 2024</span>
+                <div class="artist-box" data-material="{{ .Params.cateMetal }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
+                </div>
+                <div class="artist-box" data-material="{{ .Params.cateMetal }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
+                </div>
+                <div class="artist-box" data-material="{{ .Params.cateMetal }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
                 </div>
             </div>
         </div>
@@ -149,16 +217,41 @@
         <div class="artist-card" data-category="siddhiraj">
             <h3>{{ .Params.artistSiddhiraj }}</h3>
             <div class="artist-grid">
-                <div class="artist-box">
-                    <figure><img src="{{ "/img/stone-1.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Stone · 2024</span>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
                 </div>
-
-                <div class="artist-box">
-                    <figure><img src="{{ "/img/stone-2.jpg" | relURL }}" alt=""></figure>
-                    <strong>Buddha Head</strong>
-                    <span>Stone · 2024</span>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
+                </div>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
+                </div>
+                <div class="artist-box" data-material="{{ .Params.cateStone }}">
+                    <figure>
+                        <a href="{{ "/img/no-image.jpg" | relURL }}" data-fancybox="gallery" data-caption="Buddha Head · Copper · 2024">
+                            <img src="{{ "/img/no-image.jpg" | relURL }}" alt="Buddha Head" />
+                        </a>
+                    </figure>
+                    <strong>No Image</strong>
+                    <span>No Image · 2024</span>
                 </div>
             </div>
         </div>

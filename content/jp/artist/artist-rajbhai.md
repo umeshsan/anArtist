@@ -5,7 +5,7 @@ postTitle: "STONE CRAFT"
 yearTitle: "35+ years (2nd generation)"
 type: "artist"
 category: "stone"  # stone / thanka / metal / engrave
-image: "/img/rajbhai.png"
+image: "/img/rajbhai.jpg"
 background: "This stone craft artist brings life to raw stone through delicate carving and creative vision. Their work combines cultural heritage with artistic precision, producing sculptures that are both timeless and captivating."
 location: "Bhinchhe Bahal-7, Patan, Nepal"
 workSample:
