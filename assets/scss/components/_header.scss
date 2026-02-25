@@ -1,8 +1,6 @@
 @import "../abstracts/variables";
 @import "../base/mixins"; // Import mixins
 
-
-
 /* header / status bar – stays at top */
 .status-bar {
     display: flex;
@@ -20,9 +18,43 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 22px 8px 22px;
+    padding: 8px 20px 8px 20px;
     background: #f3efea;
     flex-shrink: 0;
+
+    .avatar-icon img {
+        object-fit: cover;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        min-width: 46px;
+        min-height: 46px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 650;
+        letter-spacing: -0.5px;
+        background: linear-gradient(145deg, #4f3b2c, #2f2a24);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+    }
+}
+
+.avatar-icon {
+    background: #e9ddd2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #4a3f36;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+    flex-shrink: 0;
+    text-decoration: none;
 }
 
 .header-left {
@@ -44,31 +76,5 @@
     cursor: pointer;
     transition: 0.1s;
     border: none;
-    text-decoration: none;
-}
-
-.app-header h1 {
-    font-size: 20px;
-    font-weight: 650;
-    letter-spacing: -0.5px;
-    background: linear-gradient(145deg, #4f3b2c, #2f2a24);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
-}
-
-.avatar-icon {
-    background: #e9ddd2;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    color: #4a3f36;
-    border: 2px solid white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
-    flex-shrink: 0;
     text-decoration: none;
 }
