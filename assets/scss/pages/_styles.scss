@@ -16,7 +16,8 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 60px);
+    overflow: hidden;
 }
 
 /* Background Image */
@@ -91,7 +92,7 @@ body {
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 90px;
+    bottom: 120px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
