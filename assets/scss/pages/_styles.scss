@@ -51,8 +51,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding-inline: 1rem;
     color: $white;
+    overflow: hidden;
 }
 
 .hero-content h1 {
