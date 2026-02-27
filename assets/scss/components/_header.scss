@@ -20,7 +20,7 @@
     justify-content: space-between;
     padding: 5px 20px;
     //background: #f3efea;
-    background: #303030;
+    background: $black;
     flex-shrink: 0;
     min-height: 60px;
 
@@ -38,6 +38,16 @@
         letter-spacing: -0.5px;
         color: $white;
         white-space: nowrap;
+    }
+}
+
+.index {
+    .app-header {
+        background: #f3efea;
+
+        h1 {
+            color: $black;
+        }
     }
 }
 

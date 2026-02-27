@@ -1,0 +1,79 @@
+@import "../abstracts/variables";
+@import "../base/mixins";
+
+.journey-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    background: $white;
+    flex-wrap: wrap;
+}
+
+.journeys {
+    color: $dark;
+
+    h3 {
+        color: $black;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        list-style-type: circle;
+        margin-left: 2rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+
+        strong {
+            font-weight: 600;
+            color: $black;
+        }
+    }
+
+    .map-caption {
+        font-style: italic;
+        color: $dark;
+    }
+
+    .visitor-instructions ul {
+        list-style-type: circle;
+    }
+
+    .main-img {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        margin-bottom: 2rem;
+        border-radius: 24px;
+        background: $lightBg;
+        border: 1px solid $borderClr;
+        padding: 0.5rem;
+        padding-bottom: 0;
+        transition: opacity .3s ease,
+            transform .2s ease;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1.5;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+
+    iframe.map-embed {
+        width: 100%;
+        height: 400px;
+        border: 0;
+        margin-top: 1rem;
+        border-radius: 8px;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        text-align: justify;
+    }
+}
