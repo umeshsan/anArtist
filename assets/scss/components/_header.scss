@@ -18,9 +18,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 20px 8px 20px;
-    background: #f3efea;
+    padding: 5px 20px;
+    //background: #f3efea;
+    background: #303030;
     flex-shrink: 0;
+    min-height: 60px;
 
     .avatar-icon img {
         object-fit: cover;
@@ -34,9 +36,7 @@
         font-size: 20px;
         font-weight: 650;
         letter-spacing: -0.5px;
-        background: linear-gradient(145deg, #4f3b2c, #2f2a24);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: $white;
         white-space: nowrap;
     }
 }
@@ -71,7 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4d3f35;
+    color: $brown;
     font-size: 18px;
     cursor: pointer;
     transition: 0.1s;
