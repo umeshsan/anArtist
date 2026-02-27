@@ -16,7 +16,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 120px);
 }
 
 /* Background Image */
@@ -45,7 +45,7 @@ body {
 .hero {
     position: relative;
     z-index: 2;
-    height: calc(100vh - 80px);
+    height: calc(100% - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +53,6 @@ body {
     text-align: center;
     padding-inline: 1rem;
     color: $white;
-    overflow: hidden;
 }
 
 .hero-content h1 {
