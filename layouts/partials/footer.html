@@ -12,16 +12,16 @@
             <span>Discover</span>
         </a>
 
-        <!-- Journeys -->
-        <a href="{{ "/journeys/" | relLangURL }}" class="nav-item {{ if in .RelPermalink "/journeys/" }}active{{ end }}">
-            <i class="fa-regular fa-map"></i>
-            <span>Journeys</span>
-        </a>
-
         <!-- Works -->
         <a href="{{ "/works/" | relLangURL }}" class="nav-item {{ if in .RelPermalink "/works/" }}active{{ end }}">
             <i class="fa-regular fa-image"></i>
             <span>Works</span>
+        </a>
+
+        <!-- Journeys -->
+        <a href="{{ "/journeys/" | relLangURL }}" class="nav-item {{ if in .RelPermalink "/journeys/" }}active{{ end }}">
+            <i class="fa-regular fa-map"></i>
+            <span>Journeys</span>
         </a>
     </div>
 </footer>

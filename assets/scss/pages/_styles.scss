@@ -13,8 +13,6 @@ body {
     font-weight: 500;
 }
 
-/* hero.css */
-
 /* Hero Section */
 .hero-section {
     position: relative;
@@ -47,14 +45,14 @@ body {
 .hero {
     position: relative;
     z-index: 2;
-    height: calc(100% - 65px);
+    height: calc(100% - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    color: #fff;
+    color: $white;
 }
 
 .hero-content h1 {
@@ -77,7 +75,7 @@ body {
 
 .hero-buttons .btn-primary {
     background-color: #ff6600;
-    color: #fff;
+    color: $white;
     padding: 12px 30px;
     font-size: 1.2rem;
     border-radius: 24px;
@@ -94,13 +92,12 @@ body {
 .scroll-indicator {
     position: absolute;
     bottom: 90px;
-    /* Above the bottom nav by 20px */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
     width: 20px;
     height: 45px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -113,7 +110,7 @@ body {
     display: block;
     width: 6px;
     height: 6px;
-    background: #fff;
+    background: $white;
     border-radius: 50%;
     animation: scroll 1.5s infinite;
 }
@@ -213,10 +210,8 @@ body {
 .app-screen {
     max-width: 480px;
     width: 100%;
-    background-color: #ffffff;
-    //box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.25);
+    background-color: $white;
     overflow: hidden;
-    //border: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
     height: 100vh;
