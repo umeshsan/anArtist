@@ -46,7 +46,7 @@ body {
 .hero {
     position: relative;
     z-index: 2;
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +54,7 @@ body {
     text-align: center;
     padding-inline: 1rem;
     color: $white;
+    overflow: hidden;
 }
 
 .hero-content h1 {
@@ -92,7 +93,7 @@ body {
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 120px;
+    bottom: 130px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
