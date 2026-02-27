@@ -1,30 +1,33 @@
 {{ define "main" }}
-<section class="hero-section">
-    <!-- Background Image -->
-    <div class="hero-bg"></div>
+<!-- Scrollable Content -->
+<div class="page-container" style="padding: 0; margin-bottom: 0;">
+    <section class="hero-section">
+        <!-- Background Image -->
+        <div class="hero-bg"></div>
 
-    <!-- Overlay -->
-    <div class="hero-overlay"></div>
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
 
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Hands That Shape History</h1>
-            <p class="hero-subtitle">
-                Discover Master Artists in Metal, Stone & Thanka
-            </p>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Hands That Shape History</h1>
+                <p class="hero-subtitle">
+                    Discover Master Artists in Metal, Stone & Thanka
+                </p>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="{{ "/discover/" | relLangURL }}" class="btn-primary">
+                    Explore Artists
+                </a>
+            </div>
         </div>
 
-        <div class="hero-buttons">
-            <a href="{{ "/discover/" | relLangURL }}" class="btn-primary">
-                Explore Artists
-            </a>
+        <!-- Scroll Down Animation -->
+        <div class="scroll-indicator">
+            <span></span>
         </div>
-    </div>
-
-    <!-- Scroll Down Animation -->
-    <div class="scroll-indicator">
-        <span></span>
-    </div>
-</section>
+    </section>
+</div>
 
 {{ end }}
