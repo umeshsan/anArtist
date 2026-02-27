@@ -5,8 +5,21 @@
     {{ partial "head.html" . }}
 </head>
 
+<!-- Determine page-specific class -->
+{{ $class := "" }}
+{{ if eq .RelPermalink ("/" | relLangURL) }}
+{{ $class = "index" }}
+{{ else if strings.HasPrefix .RelPermalink ("/discover/" | relLangURL) }}
+{{ $class = "discover" }}
+{{ else if strings.HasPrefix .RelPermalink ("/journeys/" | relLangURL) }}
+{{ $class = "journeys" }}
+{{ else if strings.HasPrefix .RelPermalink ("/works/" | relLangURL) }}
+{{ $class = "works" }}
+{{ else if strings.HasPrefix .RelPermalink ("/profile/" | relLangURL) }}
+{{ $class = "profile" }}
+{{ end }}
 
-<body>
+<body class="{{ $class }}">
     <div class="app-screen">
         {{ partial "header.html" . }}
 

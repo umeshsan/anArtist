@@ -1,7 +1,13 @@
 <footer class="text-center">
     <div class="bottom-nav">
-        <!-- Discover (Home) -->
+        <!-- Home -->
         <a href="{{ "/" | relLangURL }}" class="nav-item {{ if .IsHome }}active{{ end }}">
+            <i class="fa-solid fa-home"></i>
+            <span>Home</span>
+        </a>
+
+        <!-- Discover -->
+        <a href="{{ "/discover/" | relLangURL }}" class="nav-item {{ if in .RelPermalink "/discover/" }}active{{ end }}">
             <i class="fa-regular fa-compass"></i>
             <span>Discover</span>
         </a>
@@ -16,12 +22,6 @@
         <a href="{{ "/works/" | relLangURL }}" class="nav-item {{ if in .RelPermalink "/works/" }}active{{ end }}">
             <i class="fa-regular fa-image"></i>
             <span>Works</span>
-        </a>
-
-        <!-- Profile -->
-        <a href="{{ "/profile/" | relLangURL }}" class="nav-item {{ if in .RelPermalink "/profile/" }}active{{ end }}">
-            <i class="fa-regular fa-user"></i>
-            <span>Profile</span>
         </a>
     </div>
 </footer>

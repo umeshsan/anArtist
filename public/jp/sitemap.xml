@@ -14,23 +14,6 @@
                 href="//localhost:1313/jp/artist/artist-amar/"
                 />
   </url><url>
-    <loc>//localhost:1313/jp/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ne"
-                href="//localhost:1313/ne/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="//localhost:1313/jp/"
-                />
-  </url><url>
     <loc>//localhost:1313/jp/artist/</loc>
     <xhtml:link
                 rel="alternate"
@@ -72,6 +55,35 @@
                 href="//localhost:1313/jp/categories/"
                 />
   </url><url>
+    <loc>//localhost:1313/jp/discover/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/discover/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/jp/discover/"
+                />
+  </url><url>
+    <loc>//localhost:1313/jp/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ne"
+                href="//localhost:1313/ne/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/jp/"
+                />
+  </url><url>
     <loc>//localhost:1313/jp/journeys/</loc>
     <xhtml:link
                 rel="alternate"
@@ -82,18 +94,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="//localhost:1313/jp/journeys/"
-                />
-  </url><url>
-    <loc>//localhost:1313/jp/profile/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/profile/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="//localhost:1313/jp/profile/"
                 />
   </url><url>
     <loc>//localhost:1313/jp/artist/artist-rajbhai/</loc>

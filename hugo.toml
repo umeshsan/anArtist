@@ -1,11 +1,11 @@
 baseURL = '/'
-title = 'Artisan trail'
+title = 'Heritage Carvers Hub'
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = true #consistent URL structure for all languages
 enableInlineShortcodes = true
-disableFastRender = false
-relativeURLs = true
-canonifyURLs = true
+disableFastRender = false #Fast render is enabled [Hugo rebuilds only changed pages]
+relativeURLs = true #Makes links relative [Best for Local or portable hosting]
+#canonifyURLs = true #Makes links absolute using baseURL [Production & SEO]
 
 [languages]
   [languages.en]
@@ -28,4 +28,4 @@ canonifyURLs = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = true #Allow raw HTML inside Markdown files.

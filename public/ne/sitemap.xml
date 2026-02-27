@@ -2,23 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/ne/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="//localhost:1313/jp/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ne"
-                href="//localhost:1313/ne/"
-                />
-  </url><url>
     <loc>//localhost:1313/ne/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -34,6 +17,23 @@
                 rel="alternate"
                 hreflang="ne"
                 href="//localhost:1313/ne/categories/"
+                />
+  </url><url>
+    <loc>//localhost:1313/ne/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="//localhost:1313/jp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ne"
+                href="//localhost:1313/ne/"
                 />
   </url><url>
     <loc>//localhost:1313/ne/tags/</loc>

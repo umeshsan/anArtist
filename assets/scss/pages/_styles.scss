@@ -13,6 +13,202 @@ body {
     font-weight: 500;
 }
 
+/* hero.css */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: calc(100vh - 70px);
+}
+
+/* Background Image */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/hero-bg.png') no-repeat center center / cover;
+    z-index: 0;
+}
+
+/* Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Hero Content */
+.hero {
+    position: relative;
+    z-index: 2;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 90px;
+    /* Above the bottom nav by 20px */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 20px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.scroll-indicator span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons .btn-primary {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons .btn-primary {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+/* Animations */
+@keyframes scrollAnim {
+    0% {
+        opacity: 1;
+        top: 8px;
+    }
+
+    100% {
+        opacity: 0;
+        top: 20px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* mobile card – real app view with FIXED BOTTOM NAV */
 .app-screen {
     max-width: 480px;

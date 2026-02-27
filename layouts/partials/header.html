@@ -12,7 +12,7 @@
             <h1>{{ .Params.headerTitle | default .Title }}</h1>
         </div>
 
-        <a href="{{ "/profile/" | relLangURL }}" class="avatar-icon">
+        <a href="{{ "/works/" | relLangURL }}" class="avatar-icon">
             <img src="{{ (.Params.image | default "/img/logo.png") | relURL }}" alt="{{ .Title }}">
         </a>
     </div>

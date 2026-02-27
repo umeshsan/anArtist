@@ -1,0 +1,85 @@
+{{ define "main" }}
+<!-- Scrollable Content -->
+<div class="page-container home-page">
+    <div class="journey-tabs">
+        <span class="pill active" data-filter="all" data-target="artist-card">
+            <i class="fa-regular fa-compass"></i> All Artists
+        </span>
+
+        {{ $categories := slice }}
+        {{ range $i, $artist := where .Site.RegularPages "Section" "artist" }}
+        {{ if not (in $categories $artist.Params.category) }}
+        {{ $categories = $categories | append $artist.Params.category }}
+        {{ end }}
+        {{ end }}
+
+        {{ range $categories }}
+        {{ if eq . "stone" }}
+        <span class="pill" data-filter="stone" data-target="artist-card">
+            <i class="fa-regular fa-gem"></i> Stone Craft
+        </span>
+        {{ else if eq . "thanka" }}
+        <span class="pill" data-filter="thanka" data-target="artist-card">
+            <i class="fa-solid fa-palette"></i> Thanka & Painting
+        </span>
+        {{ else if eq . "metal" }}
+        <span class="pill" data-filter="metal" data-target="artist-card">
+            <i class="fa-solid fa-hammer"></i> Metal Craft
+        </span>
+        {{ else if eq . "engrave" }}
+        <span class="pill" data-filter="engrave" data-target="artist-card">
+            <i class="fa-solid fa-hammer"></i> Engrave Craft
+        </span>
+        {{ end }}
+        {{ end }}
+    </div>
+
+    <div class="tagline-section">
+        <div class="tagline"><strong>Artist of different journey</strong> — Stone, Metal, Thanka & Painting</div>
+    </div>
+
+    <div class="artist-feed" data-container="artist-card">
+        {{ $artists := where .Site.RegularPages "Section" "artist" }}
+        {{ range $artists }}
+        <div class="artist-card" data-category="{{ .Params.category }}">
+            <div class="card-media {{ .Params.category }}-bg">
+                <div class="media-symbol">
+                    <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+                </div>
+            </div>
+
+            <div class="artist-info">
+                <div class="artist-name">
+                    {{ .Params.headerTitle | default .Title }}
+                    {{ if eq .Params.category "stone" }}<i class="fa-regular fa-gem"></i>{{ end }}
+                    {{ if eq .Params.category "thanka" }}<i class="fa-solid fa-palette"></i>{{ end }}
+                    {{ if eq .Params.category "metal" }}<i class="fa-solid fa-hammer"></i>{{ end }}
+                </div>
+
+                <div class="artist-craft">{{ .Params.postTitle }} · {{ .Params.yearTitle }}</div>
+
+                {{ with .Params.workSample }}
+                <div class="work-sample">
+                    {{ if eq .Params.category "stone" }}<i class="fa-solid fa-dharmachakra"></i>{{ end }}
+                    {{ if eq .Params.category "thanka" }}<i class="fa-solid fa-star-of-david"></i>{{ end }}
+                    {{ if eq .Params.category "metal" }}<i class="fa-solid fa-yin-yang"></i>{{ end }}
+
+                    <div class="work-desc">"{{ .title }}" <span>{{ .details }}</span></div>
+                </div>
+                {{ end }}
+
+                <div class="background-story">
+                    <p><span><strong>Background:</strong> {{ .Params.background }}</span></p>
+                </div>
+
+                <div class="location"><i class="fa-regular fa-compass"></i> {{ .Params.location }}</div>
+
+                <a href="{{ .RelPermalink }}" class="view-more-btn">
+                    <i class="fa-regular fa-eye"></i> View full profile
+                </a>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
