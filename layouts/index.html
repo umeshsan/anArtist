@@ -10,6 +10,9 @@
 
         <div class="hero">
             <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="{{ (.Params.image | default "/img/logo.png") | relURL }}" alt="{{ .Title }}">
+                </div>
                 <h1>Hands That Shape History</h1>
                 <p class="hero-subtitle">
                     Discover Master Artists in Metal, Stone & Thanka

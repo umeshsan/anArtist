@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heritage Carvers Hub</title>
+    <link>/jp/</link>
+    <description>Recent content on Heritage Carvers Hub</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="/jp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amar Shakya</title>
+      <link>/jp/artist/artist-amar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/artist/artist-amar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Babu Raja Bajracharya</title>
+      <link>/jp/artist/artist-baburaja/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/artist/artist-baburaja/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Discover</title>
+      <link>/jp/discover/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/discover/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Journeys</title>
+      <link>/jp/journeys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/journeys/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rajbhai Bajracharya</title>
+      <link>/jp/artist/artist-rajbhai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/artist/artist-rajbhai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Santa Bajracharya</title>
+      <link>/jp/artist/artist-santa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/artist/artist-santa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Siddhi Raj Shakya</title>
+      <link>/jp/artist/artist-siddhiraj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/artist/artist-siddhiraj/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Surendra Bajracharya</title>
+      <link>/jp/artist/artist-surendra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/artist/artist-surendra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ujay Bajracharya</title>
+      <link>/jp/artist/artist-ujay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/artist/artist-ujay/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Works</title>
+      <link>/jp/works/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/jp/works/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
