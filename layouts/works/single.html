@@ -5,28 +5,52 @@
 
     <!-- Artist Tabs -->
     <div class="journey-tabs">
-        <span class="pill active" data-filter="all" data-target="artist-card">All Artists</span>
-        <span class="pill" data-filter="amar" data-target="artist-card">
-            <img src="{{ "/img/amar.jpg" |relURL }}">
-        </span>
-        <span class="pill" data-filter="ujay" data-target="artist-card">
-            <img src="{{ "/img/ujay.jpg" |relURL }}">
-        </span>
-        <span class="pill" data-filter="santa" data-target="artist-card">
-            <img src="{{ "/img/santa.jpg" |relURL }}">
-        </span>
-        <span class="pill" data-filter="rajbhai" data-target="artist-card">
-            <img src="{{ "/img/rajbhai.jpg" |relURL }}">
-        </span>
-        <span class="pill" data-filter="baburaja" data-target="artist-card">
-            <img src="{{ "/img/baburaja.jpg" |relURL }}">
-        </span>
-        <span class="pill" data-filter="siddhiraj" data-target="artist-card">
-            <img src="{{ "/img/siddhiraj.jpg" |relURL }}">
-        </span>
-        <span class="pill" data-filter="surendra" data-target="artist-card">
-            <img src="{{ "/img/surendra.jpg" |relURL }}">
-        </span>
+        <div>
+            <span class="pill active" data-filter="all" data-target="artist-card">All Artists</span>
+            <small>&nbsp;</small>
+        </div>
+        <div>
+            <span class="pill" data-filter="amar" data-target="artist-card">
+                <img src="{{ "/img/amar.jpg" |relURL }}">
+            </span>
+            <small>{{ .Params.artistAmar }}</small>
+        </div>
+        <div>
+            <span class="pill" data-filter="ujay" data-target="artist-card">
+                <img src="{{ "/img/ujay.jpg" |relURL }}">
+            </span>
+            <small>{{ .Params.artistUjay }}</small>
+        </div>
+        <div>
+            <span class="pill" data-filter="santa" data-target="artist-card">
+                <img src="{{ "/img/santa.jpg" |relURL }}">
+            </span>
+            <small>{{ .Params.artistSanta }}</small>
+        </div>
+        <div>
+            <span class="pill" data-filter="rajbhai" data-target="artist-card">
+                <img src="{{ "/img/rajbhai.jpg" |relURL }}">
+            </span>
+            <small>{{ .Params.artistRajbhai }}</small>
+        </div>
+        <div>
+            <span class="pill" data-filter="baburaja" data-target="artist-card">
+                <img src="{{ "/img/baburaja.jpg" |relURL }}">
+            </span>
+            <small>{{ .Params.artistBaburaja }}</small>
+        </div>
+        <div>
+            <span class="pill" data-filter="siddhiraj" data-target="artist-card">
+                <img src="{{ "/img/siddhiraj.jpg" |relURL }}">
+            </span>
+            <small>{{ .Params.artistSiddhiraj }}</small>
+        </div>
+        <div>
+            <span class="pill" data-filter="surendra" data-target="artist-card">
+                <img src="{{ "/img/surendra.jpg" |relURL }}">
+            </span>
+            <small>{{ .Params.artistSurendra }}</small>
+        </div>
     </div>
 
     <!-- Gallery Grid -->
